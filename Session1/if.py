@@ -9,3 +9,6 @@ else:
     print('No es adulto')
 
 print('Afuera del if')
+
+if edad < 5:
+    print('Es infante')
