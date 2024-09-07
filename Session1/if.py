@@ -1,3 +1,6 @@
+# Programa para determinar si una persona es mayor de edad
+# condiciones simples y anidadas
+
 edad = int(input('Digite su edad: '))
 
 if edad > 18:
@@ -10,5 +13,6 @@ else:
 
 print('Afuera del if')
 
+# Aunque permite espacios, en practica solo tab
 if edad < 5:
     print('Es infante')
