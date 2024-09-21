@@ -1,6 +1,6 @@
 # Programa para calcular el costo del alquiler de un vehiculo
 
-km = int(input('Ingrese la cantidad de km recorridos: '))
+km = float(input('Ingrese la cantidad de km recorridos: '))
 
 # variables fijas
 iva = 0.13
@@ -25,5 +25,5 @@ else:
     alquiler -= kmAdicionalExtra * montoAdicional
 
 montoIva = alquiler * iva
-print(f'El monto total de alquiler es {alquiler}'
+print(f'El monto total de alquiler es {alquiler:.2f}'
       + f' monto incluido de IVA {montoIva:.2f}')
