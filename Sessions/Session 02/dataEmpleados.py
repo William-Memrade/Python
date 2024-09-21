@@ -1,16 +1,16 @@
 # programa que captura n cantidad de empleados
 
-option = 0
+option = "0"
 lista_empleados = []
 
-while option != 3:
+while option != "3":
     print("/////////////////// MENU ///////////////////")
     print("1. Agregar empleado")
     print("2. Mostrar empleados")
     print("3. Salir")
-    option = int(input('Seleccione la opcion deseada: '))
+    option = str(input('Seleccione la opcion deseada: '))
 
-    if option == 1:
+    if option == "1":
         print("////////////// Agregar empleado //////////////")
         name = str(input('Ingrese el nombre del empleado: '))
         cargo = str(input('Ingrese el cargo del empleado: '))
@@ -25,7 +25,7 @@ while option != 3:
 
         print("Empleado agregado con exito")
         continue
-    elif option == 2:
+    elif option == "2":
         print("////////////// Mostrar empleados //////////////")
         print(lista_empleados)
         for item in lista_empleados:
@@ -34,7 +34,7 @@ while option != 3:
             print("\n")
 
         continue
-    elif option == 3:
+    elif option == "3":
         print("Gracias por utilizar nuestros servicios")
         break
 
