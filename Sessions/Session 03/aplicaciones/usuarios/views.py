@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template
+from flask import Blueprint, render_template, redirect
 from aplicaciones.modelos.rol import Rol
 from aplicaciones.modelos.usuario import Usuario
 from aplicaciones import db
@@ -13,7 +13,8 @@ def login_view():
 @usuarios.route('/usuarios/lista/')
 def usuarios_lista():
     users = Usuario.query.all()
-    return render_template('Este es mi blueprint de usuarios', usuarios = users)
+    print(users)
+    return render_template('/usuarios/lista-usuarios.html',usuarios=users)
 
 @usuarios.route('/usuarios/insertar/')
 def nuevo_usuario():
@@ -34,4 +35,4 @@ def eliminar_usuario(id):
     user = Usuario.query.get_or_404(id)
     db.session.delete(user)
     db.session.commit()
-    return 'El usuario fue eliminado con exito!!!'
+    return redirect('/usuarios/lista/')
