@@ -9,14 +9,16 @@ class Usuario(db.Model):
     correo = db.Column(db.String(100), nullable = False)
     clave = db.Column(db.String(250), nullable = False)
     rol_id = db.Column(db.Integer, db.ForeignKey('rol.idrol', ondelete='CASCADE'))
+    pais_id = db.Column(db.Integer, db.ForeignKey('pais.idpais', ondelete='CASCADE'))
 
-    def __init__(self, usuario, nombres, apellidos, correo , clave, rol_id) -> None:
+    def __init__(self, usuario, nombres, apellidos, correo , clave, rol_id, pais_id) -> None:
         self.usuario = usuario
         self.nombres = nombres
         self.apellidos = apellidos
         self.correo = correo
         self.clave = generate_password_hash(clave)
         self.rol_id = rol_id
+        self.pais_id = pais_id
     
     def __str__(self) -> str:
         return self.usuario

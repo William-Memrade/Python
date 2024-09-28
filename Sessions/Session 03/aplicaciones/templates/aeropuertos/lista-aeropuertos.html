@@ -1,0 +1,4 @@
+<h1>Lista de aeropuertos</h1>
+{% for a in aeropuertos %}
+    <p>{{a.aeropuerto+', '+a.ciudad}} {{a.idpais.pais}}</p>
+{% endfor %}
