@@ -19,5 +19,5 @@ class DevelopmentConfig(BaseConfig):
     # ENV = "development"
     SECRET_KEY = '123'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
-    SQLALCHEMY_DATABASE_URI = "mysql+pymysql://root:admin@localhost/aerolinea"
+    SQLALCHEMY_DATABASE_URI = "mysql+pymysql://root:WilliamMemrade2!@localhost/aerolinea"
     # SQLALCHEMY_DATABASE_URI = "mssql+pymssql://sa:admin@192.168.1.20:1433/aerolinea"
