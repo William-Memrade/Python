@@ -1,0 +1,46 @@
+verificar que la versión de python sea por lo menos 3.7
+
+Menu->Terminal->New Terminal
+$ python --version
+$ py --version
+
+Crear el entorno virtual
+$ python -m venv env
+
+Seleccionar el interprete del entorno virtual
+crtl + shift + P
+Buscamos: python select interpreter
+De la lista elegimos el interprete del entorno virtual (env)
+
+La primera vez es necesario activar desde PowerShell la ejecucion de scripts
+Ejecutamos el PowerShell en windows como administrador 
+$ Set-ExecutionPolicy Unrestricted -Force
+o
+$ Set-ExecutionPolicy Unrestricted -Scope CurrentUser
+
+Activar entorno virtual
+Menu->Terminal->New Terminal
+o
+crtl + shift + p 
+buscar Terminal create new integrated terminal
+
+Actualizar pip
+python -m pip install --upgrade pip
+
+Probar activacion
+./env/Scripts/Activate.ps1
+
+Instalar flask
+python -m pip install flask
+
+Si el archivo principal es app.py
+flask run
+
+si el archivo principal es diferente de app.py
+$ $env:FLASK_APP = "run"
+
+Activar el entorno de desarrollo (debug on)
+$ $env:FLASK_ENV = "development"
+
+
+
