@@ -1,0 +1,4 @@
+<h1>Lista de usuarios</h1>
+{% for u in usuarios %}
+    <p>{{u.usuario+', '+u.nombres+', '+u.apellidos+', '+u.correo}} {{u.idrol.rol}}</p>
+{% endfor %}
