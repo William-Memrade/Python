@@ -1,0 +1,8 @@
+Instalacion de dependencias
+
+python -m pip install flask-sqlalchemy
+python -m pip install flask-migrate
+python -m pip install pymysql
+
+crear / actualizar requirenments.txt
+python -m pip freeze > requirements.txt

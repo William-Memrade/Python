@@ -28,6 +28,11 @@ def Login():
     return render_template("form1.html")
 
 
+@app.route("/register")
+def Registro():
+    return render_template("register.html")
+
+
 @app.route('/')
 def hello_world():
     return 'Hello, World!'

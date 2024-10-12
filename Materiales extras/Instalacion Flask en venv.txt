@@ -33,6 +33,9 @@ Probar activacion
 Instalar flask
 python -m pip install flask
 
+Comprobar
+python -m pip freeze
+
 Si el archivo principal es app.py
 flask run
 
