@@ -1,0 +1,92 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+.top {
+    background-color: #1d8097;
+    position: fixed;
+    width: 100%;
+}
+
+.top nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16xp;
+    padding: 20px 15px;
+    display: block;
+    float: left;
+}
+
+.top nav a.activo {
+    background-color: #155d74;
+}
+
+.top nav a:hover {
+    background-color: #155d74;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+}
+
+.login {
+    width: 30%;
+    margin-top: 100px;
+    min-width: 250px;
+    padding: 20px;
+}
+
+.user_img {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.titulo {
+    text-align: center;
+    font-style: italic;
+}
+
+
+.etiqueta, .textbox, .btn_enviar, .forgot {
+    display: block;
+    margin-bottom: 50px;
+}
+
+.textbox {
+    width: 100%;
+    padding: 5%;
+    box-sizing: border-box;
+}
+
+.btn_enviar {
+    background-color: #1d8097;
+    color: white;
+    padding: 10px;
+    border: none;
+}
+
+.btn_enviar:hover {
+    background-color: #155d74;
+    cursor: pointer;
+}
+
+.forgot {
+    text-align: right;
+    text-decoration: none;
+}
+
+.down {
+    color: white;
+    font-size: 18px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #1d8097;
+    height: 50px;
+    padding: 10px;
+}

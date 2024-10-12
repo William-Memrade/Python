@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesion</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        .titulo {color: red /*!important*/}
+        .login {border: 1px solid gray; border-radius: 10px;}
+    </style>
+</head>
+<body>
+    <header class="top">
+        <nav>
+            <a href="">Inicio</a>
+            <a href="" class="activo">Contacto</a>
+            <a href="">Acerca de</a>
+        </nav>
+    </header>
+    <main class="contenedor">
+        <div class="login">
+            <img src="{{ url_for('static', filename='img/user-icon.png') }}" alt="Imagen no disponible" class="user_img">
+            <h1 class="titulo" style="color: #ecb807; font-style: italic;">Login</h1>
+            <p>{{ error }}</p>
+            <form action="login" method="post">
+                <label for="usuario" class="etiqueta">Usuario:</label>
+                <input type="text" name="usuario" id="usuario" class="textbox">
+                <label for="clave" class="etiqueta">Contraseña:</label>
+                <input type="password" name="clave" id="clave" class="textbox">
+                <input type="submit" value="Iniciar" class="btn_enviar">
+                <a href="reset_pass.html" class="forgot">Olvidaste tu contraseña?</a>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

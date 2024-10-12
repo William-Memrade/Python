@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personas</title>
+</head>
+<body>
+    <h1>Lista de personas</h1>
+    <table border="1">
+        <thead>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Edad</th>
+        </thead>
+        <tbody>
+            {% for persona in lista %}
+                <tr>
+                    {% for valor in persona.values() %}
+                        <td>{{ valor }}</td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Lista de personas</td>
+            </tr>
+        </tfoot>
+    </table>
+    <hr>
+    <h1>Lista de personas 2</h1>
+    <table border="1">
+        <thead>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Edad</th>
+        </thead>
+        <tbody>
+            {% for persona in lista %}
+                <tr>
+                    <td>{{ persona['id'] }}</td>
+                    <td>{{ persona.nombre }}</td>
+                    <td>{{ persona.edad }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Lista de personas</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
